@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marina's Portfolio</title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="imgs/logo.png">
+
+  <meta name="description" content="김지혜의 포트폴리오입니다. | Marina's Portfolio">
+  <meta name="author" content="김지혜 | Kim Jihye">
+  <meta name="keywords" content="프론트엔드, 웹퍼블리셔, 웹개발자, 프론트엔드 개발자, front-end, web-Publisher,portfolio">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/d5f9f2818a.js" crossorigin="anonymous"></script>
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="style.css"/>
+  <!--Js-->
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <a href="">
+        <i class="fas fa-fish"></i>
+        Marina
+      </a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active">
+        Home
+      </li>
+      <li class="navbar__menu__item">
+        About
+      </li>
+      <li class="navbar__menu__item">
+        Skills
+      </li>
+      <li class="navbar__menu__item">
+        Work
+      </li>
+      <li class="navbar__menu__item">
+        Contact
+      </li> 
+    </ul>
+  </nav>
+  
+  <!-- Home -->
+  <section id="home">
+    <img src="imgs/logo.png" alt="marina profile photo" class="home__avatar">
+    <h1 class="home__title">안녕하세요 김지혜입니다.</h1>
+    <h2 class="home__description">프론트엔드 개발자입니다.</h2>
+    <button class="home__button" type="button">CONTACT ME</button>
+  </section>
+
+  <!-- About -->
+  <section id="about"  class="section">
+    <div class="section__container">
+      <h1>About me</h1>
+      <p>자기소개</p>
+      <div class="about__major">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML5</h2>
+          <div class="major__description">
+            Html을 이용하여 마크업을 할 수 있습니다.
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h2 class="major__title">css3</h2>
+          <div class="major__description">
+            css3를 이용하여 스타일을 적용할 수 있습니다.
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h2 class="major__title">javascript</h2>
+          <div class="major__description">
+            javascript를 이용하여 <br/> 동적인 사이트를 제작할 수 있습니다.
+          </div>
+        </div>
+      </div>
+      <div class="about__record">
+        <div class="record">
+          <img src="imgs/hanspm.png" alt="hanspm" class="record__logo">
+          <div class="record__description">
+            <p class="record__name">한스피엠</p>
+            <p class="record__period">2019.01 ~ 2020.05</p>
+          </div>
+        </div>
+        <div class="record">
+          <img src="imgs/himedia.png" alt="himedia academy" class="record__logo">
+          <div class="record__description">
+            <p class="record__name">하이미디어학원</p>
+            <p class="record__period">2018.02 ~ 2018.08</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <p>기술내용,경험,가능성...</p>
+      <div class="skillset">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill__description">
+            <span>Javascript</span>
+            <span>70%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:70%;"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <h1>My Work</h1>
+    <h3>Project</h3>
+    <div class="work__category">
+      <button class="category__btn">
+        All
+        <span class="category__count">5</span>
+      </button>
+      <button class="category__btn">
+        A type
+        <span class="category__count">2</span>
+      </button>
+      <button class="category__btn">
+        B type
+        <span class="category__count">3</span>
+      </button>
+    </div>
+
+    <div class="work__projects">
+      <a href="#" class="project" target="blank" data-type="A type">
+        <img class="project__img" src="imgs/project/macbook.png" alr="project" />
+        <div class="project__description">
+          <h4>Site Name</h4>
+          <span>site description</span>
+        </div>
+      </a>
+
+      <a href="#" class="project" target="blank" data-type="A type">
+        <img class="project__img" src="imgs/project/macbook.png" alr="project" />
+        <div class="project__description">
+          <h4>Site Name</h4>
+          <span>site description</span>
+        </div>
+      </a>
+
+      <a href="#" class="project" target="blank" data-type="B type">
+        <img class="project__img" src="imgs/project/macbook.png" alr="project" />
+        <div class="project__description">
+          <h4>Site Name</h4>
+          <span>site description</span>
+        </div>
+      </a>
+
+      <a href="#" class="project" target="blank" data-type="B type">
+        <img class="project__img" src="imgs/project/macbook.png" alr="project" />
+        <div class="project__description">
+          <h4>Site Name</h4>
+          <span>site description</span>
+        </div>
+      </a>
+
+      <a href="#" class="project" target="blank" data-type="B type">
+        <img class="project__img" src="imgs/project/macbook.png" alr="project" />
+        <div class="project__description">
+          <h4>Site Name</h4>
+          <span>site description</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1>Contact</h1>
+    <div class="contact__email">
+      <i class="far fa-envelope"></i>
+      <span>kim199203@gmail.com</span>
+    </div>
+    <div class="contact__git">
+      <i class="fab fa-github"></i>
+      <span>
+        <a href="https://github.com/Marina0307" target="blank">https://github.com/Marina0307</a>
+      </span>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2021 김지혜 all rights reserved.</span>
+  </footer>
+</body>
+</html>
